@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app">
     <div　class="form">
       <div class="form-group">
         <input v-model="title" placeholder="title" class="form-control">
@@ -12,7 +12,7 @@
     <div class="flex">
       <div v-for="memo in memos" :key="memo.id" class="card">
         <div class="card-body">
-          <div class="card.title">
+          <div class="card-title">
             {{ memo.title }}
           </div>
           {{ memo.description }}
