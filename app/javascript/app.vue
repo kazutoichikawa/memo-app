@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <div　class="form">
+    <div class="form">
       <div class="form-group">
         <input v-model="title" placeholder="title" class="form-control">
       </div>
@@ -40,7 +40,8 @@ export default {
     setMemo: function () {
       axios.get('/api/memos')
       .then(response => (
-        this.memos = response.data
+        this.memos = response.data,
+        console.log('method in')
       ))
     },
     addMemo: function() {
